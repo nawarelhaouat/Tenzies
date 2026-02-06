@@ -1,6 +1,6 @@
-const Die = ({ value, key }) => {
+const Die = ({ value, isHeld, key }) => {
   return (
-    <button key={key}>{value}</button>
+    <button key={key} className={isHeld ? "held" : ""}>{value}</button>
   )
 }
 
