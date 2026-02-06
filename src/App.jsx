@@ -9,7 +9,7 @@ const App = () => {
   return new Array(10)
     .fill(0)
     .map(() => ({
-      value: 5/* Math.ceil(Math.random() * 6) */, 
+      value: Math.ceil(Math.random() * 6), 
       isHeld: false,
       id: nanoid()
     }));
