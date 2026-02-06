@@ -1,68 +1,97 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
-  margin: 0;
+  font-family: 'Karina', serif;
+}
+
+main {
+  width: 360px;
+  height: 360px;
+  background-color: #0B2434;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.main--container {
+  width: 320px;
+  height: 320px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.main--container h1 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -3%;
+  color: #2B283A;
+  margin-bottom: 10px;
+}
+
+.main--container p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -3%;
+  color: #4A4E74;
+  width: 232px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dice-container {
+  width: 232px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.dice-container button {
+  width: 35px;
+  height: 35px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #2B283A;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.dice-container .freeze {
+  background-color: #59E391;
+}
+
+.main--container > button {
+  width: 92px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #5035FF;
+  color: #FFFFFF;
+  margin-top: 20px;
+  cursor: pointer;
 }
