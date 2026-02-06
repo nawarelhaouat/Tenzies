@@ -1,6 +1,6 @@
-const Die = ({ value }) => {
+const Die = ({ value, key }) => {
   return (
-    <button>{value}</button>
+    <button key={key}>{value}</button>
   )
 }
 
