@@ -1,4 +1,4 @@
-# 🎲 Tenzies Game
+# Tenzies Game
 
 A fun and interactive dice game built with React! Roll the dice until all ten show the same number. Click individual dice to "freeze" them between rolls.
 
@@ -12,11 +12,11 @@ A fun and interactive dice game built with React! Roll the dice until all ten sh
 
 ## Features
 
-- 🎉 **Confetti Celebration**: Visual celebration when you win
+- **Confetti Celebration**: Visual celebration when you win
 - **Accessibility**: Screen reader support and ARIA labels
 - **Focus Management**: Auto-focus on the game button after winning
 - **Visual Feedback**: Held dice are visually distinct
-- 🎲 **Randomized Dice**: Each game starts with random dice values
+- **Randomized Dice**: Each game starts with random dice values
 
 ## Getting Started
 
@@ -43,7 +43,7 @@ npm start
 
 5. Open [http://localhost:3000](http://localhost:3000) to play!
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -68,7 +68,7 @@ src/
 - Keyboard navigable interface
 - Semantic HTML structure
 
-## 🎮 Game Rules
+## Game Rules
 
 - Roll all 10 dice at once
 - After each roll, select dice with the same number
